@@ -14,16 +14,12 @@ public class CustomersDTO {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, length = 20)
     private String name;
 
-    @Column(nullable = false , length = 15)
     private String phoneNumber;
 
-    @Column(nullable = false)
     private String email;
 
-    @Column(nullable = false)
     private PlanType planType;
 
     public Long getId() {
